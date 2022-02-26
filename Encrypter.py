@@ -1,7 +1,6 @@
 import socket,os,threading,queue,random
 
 # An Encryption based on AES256 Alogorithm
-# Encryption from that threading will run
 
 def encrypt(key):
     while True:
